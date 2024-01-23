@@ -1,0 +1,129 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://www.precisiondippings.co.uk/wp-content/themes/wp/images/logos/prediplogo.png",
+            "size": "Medium",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Action: Read Important Documents",
+            "size": "Large",
+            "weight": "Bolder",
+            "wrap": true,
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Welcome to Precision Dippings, we require you to read the following important documents, click on the buttons below to view the documents:",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "auto",
+                                    "items": [
+                                        {
+                                            "type": "ActionSet",
+                                            "actions": [
+                                                {
+                                                    "type": "Action.OpenUrl",
+                                                    "title": "Health & Safety Policy",
+                                                    "url": "https://google.com"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "auto",
+                                    "items": [
+                                        {
+                                            "type": "ActionSet",
+                                            "actions": [
+                                                {
+                                                    "type": "Action.OpenUrl",
+                                                    "title": "Quality Policy",
+                                                    "url": "https://google.com"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "auto",
+                                    "items": [
+                                        {
+                                            "type": "ActionSet",
+                                            "actions": [
+                                                {
+                                                    "type": "Action.OpenUrl",
+                                                    "title": "General Risk Assessment",
+                                                    "url": "https://google.com"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "auto",
+                                    "items": [
+                                        {
+                                            "type": "ActionSet",
+                                            "actions": [
+                                                {
+                                                    "type": "Action.OpenUrl",
+                                                    "title": "Fire Risk Assessment",
+                                                    "url": "https://google.com"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "When you have read the document, please select the \"Read Confirmation\" button.",
+            "wrap": true,
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ActionSet",
+            "horizontalAlignment": "Center",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Read Confirmation",
+                    "data": {
+                        "policyTitle": "Your Policy Title",
+                        "userName": "User's Name",
+                        "confirmationStatus": "Confirmed"
+                    }
+                }
+            ]
+        }
+    ]
+}

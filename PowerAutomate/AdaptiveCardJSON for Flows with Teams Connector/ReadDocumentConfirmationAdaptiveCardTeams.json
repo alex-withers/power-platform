@@ -1,0 +1,71 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://www.precisiondippings.co.uk/wp-content/themes/wp/images/logos/prediplogo.png",
+            "size": "Medium",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Action: Read Important Document",
+            "size": "Large",
+            "weight": "Bolder",
+            "wrap": true,
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Person Name requires you to read an important document, click on the button below to read the document:",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "Document Name",
+                    "url": "https://your-document-url",
+                    "style": "positive"
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "When you have read the document, please select the \"Read Confirmation\" button.",
+            "wrap": true,
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ActionSet",
+            "horizontalAlignment": "Center",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Read Confirmation",
+                    "data": {
+                        "policyTitle": "Your Policy Title",
+                        "userName": "User's Name",
+                        "confirmationStatus": "Confirmed"
+                    }
+                }
+            ]
+        }
+    ]
+}

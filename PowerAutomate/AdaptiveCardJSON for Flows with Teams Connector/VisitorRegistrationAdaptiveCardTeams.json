@@ -1,0 +1,63 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 2,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Visitor Registration",
+                            "weight": "Bolder",
+                            "size": "ExtraLarge",
+                            "spacing": "None",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "New visitor has checked in",
+                            "isSubtle": true,
+                            "spacing": "None",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Name:",
+                            "size": "Medium",
+                            "wrap": true,
+                            "maxLines": 3
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Company Name:",
+                            "wrap": true,
+                            "size": "Medium"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Person Visiting:",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://assets.assureddigitaltech.com/images/Visitor%20Icon.png",
+                            "altText": "Banner Image"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

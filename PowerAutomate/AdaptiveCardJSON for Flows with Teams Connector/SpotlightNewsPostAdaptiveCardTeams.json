@@ -1,0 +1,58 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "Image",
+                    "url": "https://alexwither8eee1bb059.blob.core.windows.net/images/SportlightLogo Black.png",
+                    "width": "350px",
+                    "horizontalAlignment": "Center"
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Latest Issue Released",
+                            "weight": "Bolder",
+                            "size": "ExtraLarge",
+                            "spacing": "None",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "verticalContentAlignment": "Center",
+                    "backgroundImage": {
+                        "horizontalAlignment": "Center",
+                        "verticalAlignment": "Center"
+                    }
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "Click here to view the latest issue",
+                    "style": "positive",
+                    "url": "https://google.co.uk"
+                }
+            ],
+            "horizontalAlignment": "Center"
+        }
+    ]
+}
